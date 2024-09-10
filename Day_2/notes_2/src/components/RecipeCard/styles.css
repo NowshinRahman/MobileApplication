@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+/*font-family: "Acme", sans-serif;
+font-weight: 400;
+font-style: normal;*/
+
+body{
+    font-family: 'Open Sans' sans-serif;
+}
+
+.card{
+    border-radius: 20px;
+    background: #ffffff;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 1rem;
+    max-width: 40%;
+    margin: 1rem;
+}
+
+.img{
+    width: 30%;
+    height: auto;
+}
+
+.card_text{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.recipe_info{
+    margin-left: 1.5rem;
+}
+
+.recipe_title,
+.list_title{
+    font-family: "Acme", sans-serif;
+    font-weight: 400;
+}
+
+.recipe_title{
+    margin: 1rem;
+    font-size: 2.5rem;
+    border-bottom: 0.25rem solid #48b2ff;
+}
+
+.list_title{
+    margin: 0.5rem 0;
+    font-size: 1.625 rem;
+    color: #48b2ff;
+}
