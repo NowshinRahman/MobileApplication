@@ -6,6 +6,7 @@ import IngredientsList from './IngredientsList'
 import InstructionsList from './InstructionsList'
 import Card from './Card'
 import './styles.css'
+import UserRating from './UserRating'
 
 // HW: Apply CSS styling, dont forget to import the style sheet in the other component files!
 // Figma designs here: https://www.figma.com/file/oPToKD0BEwCUQFt3OjCDw6/RecipeCardStarter?node-id=2%3A134&mode=dev
@@ -14,9 +15,12 @@ export default function RecipeCard() {
   return (
     <Card>
       <RecipeImg imgSrc={RECIPE.imgSrc} />
+      <div className= "card-text">
       <RecipeInfo title={RECIPE.title} description={RECIPE.description} />
       <IngredientsList ingredients={RECIPE.ingredients} />
       <InstructionsList instructions={RECIPE.instructions} />
+      </div>
+      <UserRating/>
     </Card>
   )
 }
