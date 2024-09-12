@@ -3,8 +3,8 @@ export default function IngredientList(props){
     return (
         <div>
             {ingredients.map ((ingredients, index) => {}
-                return <li key = {index}>{instruction}</li>
-            })}
+                return( <li key = {index}>{instruction}</li>)
+            )}
         
         </div>
     )
