@@ -5,6 +5,7 @@ import {useState} from 'react'
 // this is the library we installed, we are importing the favorite.svg as a react component
 // RENamed to heart
 import {ReactComponent as Heart} from '@material-design-icons/svg/filled/favorite.svg'
+import './styles.css'
 
 export default function UserRating() {
   const [count, setCount] = useState(0)
@@ -24,7 +25,7 @@ export default function UserRating() {
   }
 
   return (
-    <div>
+    <div className= "heart-box">
       
       {count >0 && <button onClick={handleMinusClick}>[-]</button>}
       <span>
